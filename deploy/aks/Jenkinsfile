@@ -1,6 +1,6 @@
 node('master') {
 
-    def servicePrincipalId = 'azure_service_principal'
+    def servicePrincipalId = 'fd46b6d8-2741-4172-a031-47a322e9ab82'
     def resourceGroup = 'bluegreen'
     def aks = 'bluegreenkubecluster'
 
