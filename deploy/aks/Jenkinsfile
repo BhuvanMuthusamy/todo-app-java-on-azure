@@ -1,17 +1,17 @@
 node('master') {
 
-    def servicePrincipalId = 'fd46b6d8-2741-4172-a031-47a322e9ab82'
-    def resourceGroup = 'bluegreen'
-    def aks = 'bluegreenkubecluster'
+    def servicePrincipalId = 'eb54fb46-efc8-421d-8f56-096e01b3e242'
+    def resourceGroup = 'bluegreenv2'
+    def aks = 'bgkubeclusterv2'
 
-    def cosmosResourceGroup = 'Jenkins'
-    def cosmosDbName = 'mycosmosdb098'
-    def dbName = 'todolist'
+    def cosmosResourceGroup = 'bluegreencosmodb'
+    def cosmosDbName = 'bluegreentododb'
+    def dbName = 'bgdatabase'
 
-    def dockerRegistry = 'bgregistry.azurecr.io'
+    def dockerRegistry = 'bgregistryv2.azurecr.io'
     def imageName = "todo-app:${env.BUILD_NUMBER}"
     env.IMAGE_TAG = "${dockerRegistry}/${imageName}"
-    def dockerCredentialId = 'Docker1'
+    def dockerCredentialId = 'docker1'
 
     def currentEnvironment = 'blue'
     def newEnvironment = { ->
