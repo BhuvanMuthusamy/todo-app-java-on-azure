@@ -1,6 +1,6 @@
 node('master') {
 
-    def servicePrincipalId = '27516059-b6ba-45af-9698-35c39324f50e'
+    def servicePrincipalId = 'f2d1a62a-3201-4849-84c1-cd2c60220643'
     def resourceGroup = 'bluegreenv2'
     def aks = 'bgkubeclusterv2'
 
